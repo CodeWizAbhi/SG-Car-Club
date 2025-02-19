@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        body {
+            font-family: "Monda", serif;
+            overflow-x: hidden;
+            background-color: #f3f3f3;
+
+        }
+
+        .cars {
+            width: 20%;
+            height: 20%;
+            color: #000000;
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin-top: 40px;
+            margin-left: 40px;
+            border: 1.5px solid #000000;
+            box-shadow: 20px 20px 10px #808080;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 50%;
+            margin-bottom: 10px;
+            background-color: #ff0000;
+            border: 1px solid #000000;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 6px;
+            font-size: 17px;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+            color: #000000;
+            transition: 0.2s;
+            cursor: pointer;
+
+        }
+
+        .title {
+            margin-bottom: 10px;
+        }
+
+        .desp {
+            margin-left: 15px;
+            padding: 3px;
+        }
+
+        nav {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        nav ul li a {
+            color: #000000;
+            margin-left: 30px;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #ff0000;
+            transition: 0.4s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+
+        .navi {
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-bottom: 40px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @keyframes moveDiagonal {
+            0% {
+                opacity: 0;
+                transform: translate(-300px, 0px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+        }
+
+        @keyframes moveDiagonally {
+            0% {
+                opacity: 0;
+                transform: translate(300px, 0px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(250px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="navi">
+        <nav>
+            <ul>
+                <li><a href="./index.html" target="_self">Home</a></li>
+                <li><a href="./login.html" target="_self">Login</a></li>
+                <li><a href="./cars.html" target="_self">Cars</a></li>
+                <li><a href="./about.html" target="_self">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <div class="cards">
+        <div class="cars" style=" opacity: 0;
+        transform: translate(-300px, 0px);
+        animation: moveDiagonal 1.5s ease-out forwards;">
+            <div class="image">
+                <img src="../Images/supramain1.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>SUPRA</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The Toyota Supra is a sports car
+                     manufactured by Toyota Motor Corporation beginning in 1978</p>
+
+            </div>
+            <div class="content">
+
+                <a href="./supra.html">
+                    <center><button>See More</button></center>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="cars" style=" opacity: 0;
+        transform: translate(-300px, 0px);
+        animation: moveDiagonal 1.5s ease-out forwards;">
+            <div class="image">
+                <img src="../Images/mustang main.jpg" height="75%">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>MUSTANG</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The Ford Mustang is a series of American automobiles manufactured by Ford.......</p>
+            </div>
+            <div class="content">
+
+                <a href="./mustang.html">
+                    <center><button>See More</button></center><a>
+
+            </div>
+        </div>
+
+        <div class="cars" style="opacity: 0;
+        transform: translate(300px, 0px);
+        animation: moveDiagonally 1.5s ease-out forwards;">
+            <div class="image">
+                <img src="../Images/gwagonmain.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>G WAGON</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The G Wagon is a SUV car
+                    and grand tourer manufactured by Mercedes-Benz beginning in 1926 </p>
+            </div>
+            <div class="content">
+
+                <a href="./gwagon.html">
+                    <center><button>See More</button></center>
+                </a>
+
+
+            </div>
+        </div>
+
+        <div class="cars" style="opacity: 0;
+        transform: translate(300px, 0px);
+        animation: moveDiagonally 1.5s ease-out forwards;">
+            <div class="image">
+                <img src="../Images/rollphamain.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>RR PHANTOM</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The RR PHANTOM is a Luxury car
+                    and grand tourer manufactured by Rolls-Royce Motor beginning in 1998</p>
+
+            </div>
+            <div class="content">
+
+                <a href="./rrpanthom.html">
+                    <center><button>See More</button></center>
+
+            </div>
+        </div>
+
+        <div class="cars" style=" opacity: 0;
+        transform: translateY(250px);
+        animation: fadeInUp 1.5s ease-in-out forwards;">
+            <div class="image">
+                <img src="../Images/urusmain.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>URUS</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The Urus is a SUV car
+                    and grand tourer manufactured by Lamborghini S.p.A. beginning in 1978</p>
+
+            </div>
+            <div class="content">
+
+                <center><button>See More</button></center>
+
+            </div>
+        </div>
+
+        <div class="cars" style=" opacity: 0;
+        transform: translateY(250px);
+        animation: fadeInUp 1.5s ease-in-out forwards;">
+            <div class="image">
+                <img src="../Images/r8mian.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>Audi R8 </h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The Audi R8 is a sports car
+                    and grand tourer manufactured by Audi Corporation beginning in 1909</p>
+
+            </div>
+            <div class="content">
+
+                <center><button>See More</button></center>
+
+            </div>
+        </div>
+
+        <div class="cars" style=" opacity: 0;
+        transform: translateY(250px);
+        animation: fadeInUp 1.5s ease-in-out forwards;">
+            <div class="image">
+                <img src="../Images/legender.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>Fortuner</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The Fortuner legender is a sports car
+                    and grand tourer manufactured by Toyota Motors beginning in 1978</p>
+
+            </div>
+            <div class="content">
+
+                <center><button>See More</button></center>
+
+            </div>
+        </div>
+
+        <div class="cars" style=" opacity: 0;
+        transform: translateY(250px);
+        animation: fadeInUp 1.5s ease-in-out forwards;">
+            <div class="image">
+                <img src="../Images/utopia.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>UTOPIA</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The Pagani Utopia is a racing car
+                manufactured by Pagani Corporation beginning in 1992</p>
+
+            </div>
+            <div class="content">
+
+                <center><button>See More</button></center>
+
+            </div>
+        </div>
+
+        <div class="cars" style=" opacity: 0;
+        transform: translateY(250px);
+        animation: fadeInUp 1.5s ease-in-out forwards;">
+            <div class="image">
+                <img src="../Images/McLaren.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>McLaren P1</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The McLaren P1 is a racing car
+                    manufactured by Mclaren Corporation beginning in 2010</p>
+
+            </div>
+            <div class="content">
+
+                <center><button>See More</button></center>
+
+            </div>
+        </div>
+
+        <div class="cars" style=" opacity: 0;
+        transform: translateY(250px);
+        animation: fadeInUp 1.5s ease-in-out forwards;">
+            <div class="image">
+                <img src="../Images/aventa.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>Aventador</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The Aventador is a racing car
+                  manufactured by Lamborghini Motors beginning in 1963</p>
+
+            </div>
+            <div class="content">
+
+                <center><button>See More</button></center>
+
+            </div>
+        </div>
+
+        <div class="cars" style=" opacity: 0;
+        transform: translateY(250px);
+        animation: fadeInUp 1.5s ease-in-out forwards;">
+            <div class="image">
+                <img src="../Images/mini.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>MINI Cooper</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The Mini Cooper is a sports car
+                    and grand tourer manufactured by Mini cooper corp beginning in 1959</p>
+
+            </div>
+            <div class="content">
+
+                <center><button>See More</button></center>
+
+            </div>
+        </div>
+
+        <div class="cars" style=" opacity: 0;
+        transform: translateY(250px);
+        animation: fadeInUp 1.5s ease-in-out forwards;">
+            <div class="image">
+                <img src="../Images/mas.jpg">
+            </div>
+            <div class="title">
+                <center>
+                    <h2>MC20</h2>
+                </center>
+            </div>
+            <div class="desp">
+                <p>The MC20 is a sports car
+                    and grand tourer manufactured by Masseratti motocorp beginning in 1914</p>
+
+            </div>
+            <div class="content">
+
+                <center><button>See More</button></center>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

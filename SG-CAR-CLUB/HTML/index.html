@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicle Showroom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Monda", serif;
+            background-color: #f3f3f3;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        nav {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        nav ul li a {
+            color: #000000;
+            margin-left: 30px;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #ff0000;
+            transition: 0.4s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav .social a i {
+            color: #000000;
+            font-size: 27px;
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+
+        nav .social a i:hover {
+            transform: scale(1.3);
+            -webkit-text-stroke: 0.5px#ff0000;
+            color: transparent;
+        }
+
+        .hero-txt {
+            text-align: left;
+            top: 50%;
+            left: 0;
+            color: #ff0000;
+        }
+
+        .content {
+            text-align: left;
+        }
+
+        .content h1 {
+            font-size: 160px;
+            color: #000000;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(250px);
+            animation: fadeInUp 1.5s ease-in-out forwards;
+            transition: 0.4s;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(250px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content h1:hover {
+            -webkit-text-stroke: 2px#ff0000;
+            color: transparent;
+        }
+
+        .content a {
+            text-decoration: none;
+            display: inline-block;
+            color: #ffffff;
+            background-color: #ff0000;
+            font-size: 24px;
+            border: 2px solid #000000;
+            padding: 14px 70px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .content a:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="content">
+            <h1>Welcome</h1>
+            <a href="./cars.html">Explore</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html" target="_self">Home</a></li>
+                <li><a href="./login.html" target="_self">Login</a></li>
+                <li><a href="./cars.html" target="_self">Cars</a></li>
+                <li><a href="./about.html" target="_self">About Us</a></li>
+            </ul>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>
