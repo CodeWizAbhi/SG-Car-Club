@@ -28,7 +28,6 @@ SG-Automobiles is a simple display website created as a beginner web development
 
 ## Creator
 
-Sahil Gawade
 Abhishek Lohot
 
 ## Deployment Link
