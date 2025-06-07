@@ -26,7 +26,7 @@ SG-Automobiles is a simple display website created as a beginner web development
 
 2. Open the index.html file in your browser to view the website
 
-## Creator
+## Dev
 
 Abhishek Lohot
 
