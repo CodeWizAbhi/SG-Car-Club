@@ -20,7 +20,7 @@ SG-Automobiles is a simple display website created as a beginner web development
 
 1. Clone the repository
 
-  --bash ``` bashhttps://github.com/CodeWizAbhi/SG-Car-Club.git  ```
+   ``` https://github.com/CodeWizAbhi/SG-Car-Club.git  ```
 
 2. Open the index.html file in your browser to view the website
 
